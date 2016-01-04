@@ -18,4 +18,3 @@ iterations = raw_input("Enter total number of blinks: ")
 speed = raw_input("Enter blinking time: ")
 
 Blink(int(iterations), float(speed))
-
