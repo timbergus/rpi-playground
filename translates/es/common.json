@@ -2,5 +2,8 @@
     "kitchen": {
         "table": "mesa",
         "fork": "tenedor"
+    },
+    "cooking": {
+        "pan": "sartén"
     }
 }
