@@ -4,6 +4,7 @@
         "fork": "tenedor"
     },
     "cooking": {
-        "pan": "sartén"
+        "pan": "sartén",
+        "oven": "horno"
     }
 }

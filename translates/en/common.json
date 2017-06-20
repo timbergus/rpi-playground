@@ -4,6 +4,7 @@
         "fork": "fork"
     },
     "cooking": {
-        "pan": "pan"
+        "pan": "pan",
+        "microwave": "microwave"
     }
 }
