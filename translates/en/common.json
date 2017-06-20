@@ -5,6 +5,7 @@
     },
     "cooking": {
         "pan": "pan",
+        "oven": "",
         "microwave": "microwave"
     }
 }

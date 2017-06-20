@@ -5,6 +5,7 @@
     },
     "cooking": {
         "pan": "sartén",
-        "oven": "horno"
+        "oven": "horno",
+        "microwave": ""
     }
 }
