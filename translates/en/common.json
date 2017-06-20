@@ -2,5 +2,8 @@
     "kitchen": {
         "table": "table",
         "fork": "fork"
+    },
+    "cooking": {
+        "pan": "pan"
     }
 }
