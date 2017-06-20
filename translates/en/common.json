@@ -1,6 +1,6 @@
 {
-	"kitchen": {
-		"table": "",
-		"fork": ""
-	}
+    "kitchen": {
+        "table": "table",
+        "fork": "fork"
+    }
 }
