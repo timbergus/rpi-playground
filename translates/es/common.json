@@ -6,6 +6,7 @@
     "cooking": {
         "pan": "sartén",
         "oven": "horno",
-        "microwave": ""
+        "microwave": "microondas",
+        "spoon": "cuchara"
     }
 }
