@@ -10,5 +10,8 @@
         "microwave": "microwave",
         "spoon": "spoon",
         "pan": "pan"
+    },
+    "food": {
+        "bread": "bread"
     }
 }
