@@ -6,7 +6,6 @@
         "lamp": "lamp"
     },
     "cooking": {
-        "pan": "pan",
         "oven": "oven",
         "microwave": "microwave",
         "spoon": "spoon"
