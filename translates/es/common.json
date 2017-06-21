@@ -1,7 +1,8 @@
 {
     "kitchen": {
         "table": "mesa",
-        "fork": "tenedor"
+        "fork": "tenedor",
+        "lamp": "lámpara"
     },
     "cooking": {
         "pan": "sartén",

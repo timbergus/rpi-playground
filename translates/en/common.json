@@ -1,7 +1,8 @@
 {
     "kitchen": {
         "table": "table",
-        "fork": "fork"
+        "fork": "fork",
+        "chair": "chair"
     },
     "cooking": {
         "pan": "pan",
