@@ -10,5 +10,8 @@
         "microwave": "microondas",
         "spoon": "cuchara",
         "pan": "sartén"
+    },
+    "food": {
+        "bread": "pan"
     }
 }
