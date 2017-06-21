@@ -2,6 +2,7 @@
     "kitchen": {
         "table": "mesa",
         "fork": "tenedor",
+        "chair": "silla",
         "lamp": "lámpara"
     },
     "cooking": {
