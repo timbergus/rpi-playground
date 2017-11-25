@@ -32,17 +32,17 @@ leds = [33, 35, 37]
 
 def Blink(numTimes, speed):
     for i in range(0, numTimes):
-        print "Iteration " + str(i + 1)
+        print("Iteration " + str(i + 1))
         ledON(random.choice(leds))
         time.sleep(speed / 1000)
         ledOFF(random.choice(leds))
         time.sleep(speed / 1000)
-    print "Done"
+    print("Done")
     GPIO.cleanup()
 
 
-iterations = raw_input("Enter total number of blinks: ")
-speed = raw_input("Enter blinking time: ")
+iterations = input("Enter total number of blinks: ")
+speed = input("Enter blinking time: ")
 
 
 Blink(int(iterations), float(speed))
