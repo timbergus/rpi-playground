@@ -1,18 +1,16 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "node-server",
+  "version": "0.0.1",
+  "description": "A node server for Raspberry Pi",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Gustavo Muñoz <timbergus@gmail.com>",
+  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "kcors": "^1.0.1",
-    "koa": "^2.0.0-alpha.3",
-    "koa-bodyparser": "^3.0.0",
-    "koa-convert": "^1.2.0"
+    "express": "4.16.2"
   }
 }
