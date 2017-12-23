@@ -1,3 +1,6 @@
+#!/usr/bin/python3.4
+"""Learning!"""
+
 print("I will now count my chickens:")
 
 print("Hens", 25.0 + 30.0 / 6.0)

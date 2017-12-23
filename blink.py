@@ -1,3 +1,6 @@
+#!/usr/bin/python3.4
+"""Let's blink!."""
+
 import RPi.GPIO as GPIO
 import time
 import random
@@ -7,32 +10,23 @@ GPIO.setup(33, GPIO.OUT) # blue
 GPIO.setup(35, GPIO.OUT) # green
 GPIO.setup(37, GPIO.OUT) # blue
 
-
 def red(status):
+    """Set red color output."""
     GPIO.output(33, status)
 
-
 def green(status):
+    """Set green color output."""
     GPIO.output(35, status)
 
-
 def blue(status):
+    """Set blue color output."""
     GPIO.output(37, status)
-
-
-def ledON(led):
-    GPIO.output(led, True)
-
-
-def ledOFF(led):
-    GPIO.output(led, False)
-
-leds = [33, 35, 37]
-
-def Blink(numTimes, speed):
+def blink(iterations, speed):
+    """Makes the led blink."""
+    leds = [33, 35, 37]
     last_led_01 = 33
     last_led_02 = 35
-    for i in range(numTimes):
+    for i in range(iterations):
         print("Iteration " + str(i + 1))
         random_led_01 = random.choice(leds)
         random_led_02 = random.choice(leds)
@@ -41,18 +35,19 @@ def Blink(numTimes, speed):
             random_led_02 = random.choice(leds)
         last_led_01 = random_led_01
         last_led_02 = random_led_02
-        ledON(last_led_01)
-        ledON(last_led_02)
+        led_on(last_led_01)
+        led_on(last_led_02)
         time.sleep(speed / 1000)
-        ledOFF(last_led_01)
-        ledOFF(last_led_02)
+        led_off(last_led_01)
+        led_off(last_led_02)
         time.sleep(speed / 1000)
     print("Done")
     GPIO.cleanup()
 
+def main():
+    ITERATIONS = input("Enter total number of blinks: ")
+    SPEED = input("Enter blinking time: ")
+    blink(int(ITERATIONS), float(SPEED))
 
-iterations = input("Enter total number of blinks: ")
-speed = input("Enter blinking time: ")
-
-
-Blink(int(iterations), float(speed))
+if __name__ == "__main__":
+    main()

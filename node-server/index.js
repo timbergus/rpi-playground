@@ -1,17 +1,6 @@
-const Koa = require('koa');
-const koa = new Koa();
-var bodyParser = require('koa-bodyparser');
-var cors = require('kcors');
-const convert = require('koa-convert')
+const express = require('express');
+const app = express();
 
-koa.use(convert(cors()));
-koa.use(bodyParser());
+app.get('/', (req, res) => res.send('<h1>Hello World!</h1>'));
 
-koa.use((ctx) => {
-    console.log(ctx.request.body);
-    
-    ctx.statusCode = 200;
-    ctx.body = 'We have a body!';
-});
-
-koa.listen(5000);
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
