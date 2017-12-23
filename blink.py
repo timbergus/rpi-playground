@@ -29,13 +29,23 @@ def ledOFF(led):
 
 leds = [33, 35, 37]
 
-
 def Blink(numTimes, speed):
-    for i in range(0, numTimes):
+    last_led_01 = 33
+    last_led_02 = 35
+    for i in range(numTimes):
         print("Iteration " + str(i + 1))
-        ledON(random.choice(leds))
+        random_led_01 = random.choice(leds)
+        random_led_02 = random.choice(leds)
+        while random_led_01 == last_led_01 or random_led_02 == last_led_02 or random_led_01 == random_led_02:
+            random_led_01 = random.choice(leds)
+            random_led_02 = random.choice(leds)
+        last_led_01 = random_led_01
+        last_led_02 = random_led_02
+        ledON(last_led_01)
+        ledON(last_led_02)
         time.sleep(speed / 1000)
-        ledOFF(random.choice(leds))
+        ledOFF(last_led_01)
+        ledOFF(last_led_02)
         time.sleep(speed / 1000)
     print("Done")
     GPIO.cleanup()
