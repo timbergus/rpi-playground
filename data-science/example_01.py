@@ -4,7 +4,7 @@
 N = 5
 
 while N >= 0:
-    print N
+    print(N)
     N -= 1
 
-print 'Blastoff!'
+print('Blastoff!')

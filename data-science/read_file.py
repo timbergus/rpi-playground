@@ -1,22 +1,22 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3.7
 """Example."""
 
-HANDLE = open('sample.txt', 'r')
+HANDLE = open('./data-science/sample.txt', 'r')
 
 TEXT = HANDLE.read()
 
-print TEXT
+print(TEXT)
 
 WORDS = TEXT.split()
 
-print WORDS
+print(WORDS)
 
 COUNTS = dict()
 
 for word in WORDS:
     COUNTS[word] = COUNTS.get(word, 0) + 1
 
-print COUNTS
+print(COUNTS)
 
 BIG_COUNT = None
 BIG_WORD = None
@@ -26,4 +26,4 @@ for word, count in COUNTS.items():
         BIG_WORD = word
         BIG_COUNT = count
 
-print BIG_WORD, BIG_COUNT
+print(BIG_WORD, BIG_COUNT)
