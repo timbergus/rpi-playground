@@ -1,7 +1,7 @@
 #!/usr/bin/python3.7
 """Example."""
 
-HANDLE = open('./data-science/sample.txt', 'r')
+HANDLE = open('./sample.txt', 'r')
 
 TEXT = HANDLE.read()
 
