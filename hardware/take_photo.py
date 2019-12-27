@@ -1,4 +1,7 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3.8
+
+import time
+
 """Let's take a photo!."""
 
 from os import rename, path, listdir
@@ -11,7 +14,5 @@ camera = PiCamera()
 
 camera.start_preview()
 sleep(5)
-camera.capture('image.jpg')
+camera.capture(f'{DIR}/image({time.time()}).jpg')
 camera.stop_preview()
-
-move('image.jpg', 'images/image' + str(len(listdir(DIR)))  + '.jpg')
