@@ -1,3 +1,4 @@
 /node-server/node_modules/
+/images/
 *.jpg
 *.DS_Store
