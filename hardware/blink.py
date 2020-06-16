@@ -8,9 +8,9 @@ import random
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(33, GPIO.OUT) # blue
-GPIO.setup(35, GPIO.OUT) # green
-GPIO.setup(37, GPIO.OUT) # blue
+GPIO.setup(33, GPIO.OUT)  # blue
+GPIO.setup(35, GPIO.OUT)  # green
+GPIO.setup(37, GPIO.OUT)  # blue
 
 
 def red(status):
@@ -48,8 +48,8 @@ def blink(iterations, speed):
         random_led_01 = random.choice(leds)
         random_led_02 = random.choice(leds)
         while random_led_01 == last_led_01 or \
-              random_led_02 == last_led_02 or \
-              random_led_01 == random_led_02:
+                random_led_02 == last_led_02 or \
+                random_led_01 == random_led_02:
             random_led_01 = random.choice(leds)
             random_led_02 = random.choice(leds)
         last_led_01 = random_led_01

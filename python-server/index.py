@@ -1,11 +1,11 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3.8
 """Server"""
 
 from flask import Flask, render_template
-import RPi.GPIO as GPIO
-import picamera
+# import RPi.GPIO as GPIO
+# import picamera
 
-CAMERA = picamera.PiCamera()
+# CAMERA = picamera.PiCamera()
 
 app = Flask(__name__)
 
@@ -31,6 +31,7 @@ def hello(name):
     """Fake route."""
     return render_template('page.html', name=name)
 
+
 # @app.route('/led/<state>')
 # def led(state):
 #     """Led route route."""
@@ -43,4 +44,4 @@ def hello(name):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='localhost')
